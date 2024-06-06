@@ -1,0 +1,12 @@
+name: CI/CD
+
+on: [workflow_call]
+
+jobs:
+  vault:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read secret
+        run: |
+          echo Reading a secret
+
