@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: CodeQL
         run: |
-          echo Code vulnerability scanning
+          echo "Code vulnerability scanning"
 

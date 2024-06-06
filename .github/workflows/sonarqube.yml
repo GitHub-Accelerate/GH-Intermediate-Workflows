@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Test code coverage
         run: |
-          echo Testing code coverage
+          echo "Testing code coverage"
 
