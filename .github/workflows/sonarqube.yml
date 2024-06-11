@@ -1,9 +1,9 @@
-name: CI/CD
+name: SonarQube
 
 on: [workflow_call]
 
 jobs:
-  vault:
+  sonarqube:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:

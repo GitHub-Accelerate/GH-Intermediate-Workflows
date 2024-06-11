@@ -1,9 +1,9 @@
-name: CI/CD
+name: CodeQL
 
 on: [workflow_call]
 
 jobs:
-  vault:
+  codeql:
     runs-on: ubuntu-latest
     steps:
       - name: CodeQL
