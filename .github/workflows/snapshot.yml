@@ -2,27 +2,18 @@ name: SnapShot
 
 on:
   workflow_call:
-  # Reusable workflows are triggered by the workflow_call event and
-  # can’t be manually triggered using the workflow_dispatch event.
-  # The workflow_dispatch event is ignored in reusable workflows.
-  workflow_dispatch:
     inputs:
       createRelease:
         description: 'Create a release'
-        required: true
         type: boolean
+        required: true
       deployEnv:
         description: 'Deployment environment'
+        type: string
         required: true
-        default: 'dev'
-        type: choice
-        options:
-        - dev
-        - qa
-        - prod
       deployVersion:
-        description: 'Environment to run tests against'
-        type: environment
+        description: 'Deployment version'
+        type: string
         required: true
 
 jobs:
